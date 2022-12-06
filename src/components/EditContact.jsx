@@ -66,7 +66,9 @@ const EditContact = () => {
     <div className="container">
       {currentContact ? (
         <>
-          <h1 className="display-3 my-5  text-center">Edit Contact {id}</h1>
+          <h1 className="display-3 my-5  text-center">
+            Edit Contact: {currentContact.name}
+          </h1>
           <div className="row">
             <div className="col-md-6 shadow my-auto mx-auto">
               <form onSubmit={handleSubmit}>
